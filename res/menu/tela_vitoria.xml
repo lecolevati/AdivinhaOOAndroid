@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.fateczl.jogoooadivinha.TelaVitoria" >
+    <item android:id="@+id/menuVitoriaVoltar" android:title="Reiniciar"></item>
+    <item android:id="@+id/menuVitoriaSair" android:title="Sair"></item>
+
+</menu>
