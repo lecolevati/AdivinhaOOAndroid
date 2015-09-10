@@ -1,25 +1,31 @@
 package br.com.fateczl.jogoooadivinha;
 
 import android.support.v7.app.AppCompatActivity;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TelaVitoria extends AppCompatActivity {
 
 	private TextView tvResultadoFinal;
 	private Bundle parametros;
+	private ImageView ivBalao;
 	private Intent intent;
 	private int numGerado;
 	private int tentativas;
 	
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tela_vitoria);
 		
+		ivBalao = (ImageView) findViewById(R.id.ivBalao);
+		ivBalao.setImageResource(R.drawable.baloes);
 		tvResultadoFinal = (TextView) findViewById(R.id.tvResultadoFinal);
 		resultado();
 	}

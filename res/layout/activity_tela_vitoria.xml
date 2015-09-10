@@ -8,14 +8,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.fateczl.jogoooadivinha.TelaVitoria" >
 
+    <ImageView
+        android:id="@+id/ivBalao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvResultadoFinal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/abc_ab_share_pack_mtrl_alpha" />
+
     <TextView
         android:id="@+id/tvResultadoFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="181dp"
-        android:text=" "
+        android:layout_marginBottom="90dp"
+        android:text=" blabal "
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
